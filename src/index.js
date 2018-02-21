@@ -1,8 +1,12 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
+'use strict'
 
-ReactDOM.render(<App />, document.getElementById('root'));
-registerServiceWorker();
+import Title from './app'
+
+var React = require('react')
+var ReactDOM = require('react-dom')
+//var Title = require('./app')
+
+ReactDOM.render(
+    React.createElement(Title),
+    document.querySelector('[data-js="app"]')
+)
